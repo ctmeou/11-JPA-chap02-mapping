@@ -7,6 +7,10 @@
         <class>com.ohgiraffers.section03.primarykey.subsection01.sequence.Member</class>
         <class>com.ohgiraffers.section03.primarykey.subsection02.table.Member</class>
         <class>com.ohgiraffers.section04.enumtype.Member</class>
+        <class>com.ohgiraffers.section05.access.subsection01.field.Member</class>
+        <class>com.ohgiraffers.section05.access.subsection02.getter.Member</class>
+        <class>com.ohgiraffers.section06.compositekey.subsection01.embedded.Member</class>
+        <class>com.ohgiraffers.section06.compositekey.subsection02.idclass.Member</class>
         <properties>
             <!-- 데이터 베이스 연결 정보 -->
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>

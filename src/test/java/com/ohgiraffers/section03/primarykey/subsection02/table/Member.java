@@ -119,5 +119,4 @@ public class Member {
                 + ", address=" + address + ", enrollDate=" + enrollDate + ", memberRole=" + memberRole
                 + ", status=" + status + "]";
     }
-
 }
