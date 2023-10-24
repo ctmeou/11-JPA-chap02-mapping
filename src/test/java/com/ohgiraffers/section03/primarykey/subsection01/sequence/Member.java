@@ -1,17 +1,22 @@
-package com.ohgiraffers.section01.entity;
+package com.ohgiraffers.section03.primarykey.subsection01.sequence;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name="member_section01")
-@Table(name="tbl_member_section01")
+@Entity(name="member_section03_subsection01")
+@Table(name="tbl_member_section03_subsection01")
+//식별자 생성기 설정
+@SequenceGenerator(
+        name = "member_sequence_generator",     // 식별자 생성기 이름         //generator의 명칭
+        sequenceName = "SEQ_MEMBER_NO",         // 데이터 베이스 시퀀스 객체명 //오라클의 object name이라고 생각
+        initialValue = 5,                       // 시퀀스 시작값 설정
+        allocationSize = 1                      // 시퀀스 증가값 설정
+)
 public class Member {
     @Id
     @Column(name="member_no")
-    private int memberNo;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "member_sequence_generator") //실제
+    private int memberNo; //시퀀스 전략을 이용해서 memberNo 생성
     @Column(name="member_id")
     private String memberId;
     @Column(name="member_pwd")
@@ -108,6 +113,7 @@ public class Member {
     public void setStatus(String status) {
         this.status = status;
     }
+
     @Override
     public String toString() {
         return "Member [memberNo=" + memberNo + ", memberId=" + memberId + ", memberPwd=" + memberPwd

@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.entity;
+package com.ohgiraffers.section02.column;
 
 import org.junit.jupiter.api.*;
 
@@ -9,7 +9,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class EntityMappingTests {
+public class ColumnMappingTests {
 
     //application 당 1개만
     private static EntityManagerFactory entityManagerFactory;
@@ -38,7 +38,7 @@ public class EntityMappingTests {
     }
 
     @Test
-    public void 테이블_만들기_테스트() {
+    public void 컬럼_속성_테스트() {
 
         // given
         Member member = new Member();

@@ -1,16 +1,19 @@
-package com.ohgiraffers.section01.entity;
+package com.ohgiraffers.section03.primarykey.subsection02.table;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name="member_section01")
-@Table(name="tbl_member_section01")
+@Entity(name="member_section03_subsection02")
+@Table(name="tbl_member_section03_subsection02")
+@TableGenerator(
+        name = "member_seq_table_generator", //Generator 지칭하는 이름
+        table = "tbl_my_sequences",          //테이블 명칭
+        pkColumnName = "my_seq_member_no"    //사용할 primaryKey의 이름
+)
 public class Member {
     @Id
     @Column(name="member_no")
+    @GeneratedValue(strategy = GenerationType.TABLE, generator = "member_seq_table_generator")
     private int memberNo;
     @Column(name="member_id")
     private String memberId;
@@ -108,6 +111,7 @@ public class Member {
     public void setStatus(String status) {
         this.status = status;
     }
+
     @Override
     public String toString() {
         return "Member [memberNo=" + memberNo + ", memberId=" + memberId + ", memberPwd=" + memberPwd

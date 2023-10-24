@@ -1,13 +1,10 @@
-package com.ohgiraffers.section01.entity;
+package com.ohgiraffers.section04.enumtype;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name="member_section01")
-@Table(name="tbl_member_section01")
+@Entity(name="member_section4")
+@Table(name="tbl_member_section04")
 public class Member {
     @Id
     @Column(name="member_no")
@@ -26,15 +23,19 @@ public class Member {
     private String address;
     @Column(name="enroll_date")
     private Date enrollDate;
+    //string -> RoleType 타입 변경
     @Column(name="member_role")
-    private String memberRole;
+    // @Enumerated(EnumType.ORDINAL)   // enum을 상숫값 사용한다는 의미 : 기본값(생략해도 동일)
+    @Enumerated(EnumType.STRING)    // enum을 문자 값 사용한다는 의미
+    private RoleType memberRole;
     @Column(name="status")
     private String status;
 
     public Member() {}
 
     public Member(int memberNo, String memberId, String memberPwd, String nickname, String phone,
-                  String email, String address, Date enrollDate, String memberRole, String status) {
+                  String email, String address, Date enrollDate, RoleType memberRole, String status) {
+                                                                //String -> RoleType 데이터 타입 변경
         super();
         this.memberNo = memberNo;
         this.memberId = memberId;
@@ -87,6 +88,7 @@ public class Member {
     public String getAddress() {
         return address;
     }
+
     public void setAddress(String address) {
         this.address = address;
     }
@@ -96,10 +98,11 @@ public class Member {
     public void setEnrollDate(Date enrollDate) {
         this.enrollDate = enrollDate;
     }
-    public String getMemberRole() {
+    //getter, setter string -> RoleType 타입 변경
+    public RoleType getMemberRole() {
         return memberRole;
     }
-    public void setMemberRole(String memberRole) {
+    public void setMemberRole(RoleType memberRole) {
         this.memberRole = memberRole;
     }
     public String getStatus() {
