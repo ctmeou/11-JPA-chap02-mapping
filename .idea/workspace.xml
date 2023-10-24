@@ -4,20 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb1b093b-24fe-4d47-8048-fc06f06ae048" name="Changes" comment="&#10;10/23 himedia 11.JPA - 02.mapping">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section02/column/ColumnMappingTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section02/column/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section03/primarykey/subsection01/sequence/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section03/primarykey/subsection01/sequence/PrimaryKeyMappingTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section03/primarykey/subsection02/table/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section03/primarykey/subsection02/table/SequenceTableMappingTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section04/enumtype/EntityTypeMappingTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section04/enumtype/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section04/enumtype/RoleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section01/entity/EntityMappingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section01/entity/EntityMappingTests.java" afterDir="false" />
+    <list default="true" id="eb1b093b-24fe-4d47-8048-fc06f06ae048" name="Changes" comment="&#10;10/24 himedia 11.JPA - 02.mapping">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section05/access/subsection01/field/FieldAccessTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section05/access/subsection01/field/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section05/access/subsection02/getter/GetterAccessTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section05/access/subsection02/getter/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section06/compositekey/subsection01/embedded/EmbeddedKeyTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section06/compositekey/subsection01/embedded/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section06/compositekey/subsection01/embedded/MemberPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section06/compositekey/subsection02/idclass/IdClassTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section06/compositekey/subsection02/idclass/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section06/compositekey/subsection02/idclass/MemberPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section01/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section01/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section02/column/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section02/column/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section03/primarykey/subsection01/sequence/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section03/primarykey/subsection01/sequence/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section03/primarykey/subsection02/table/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section03/primarykey/subsection02/table/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section04/enumtype/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section04/enumtype/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section04/enumtype/RoleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section04/enumtype/RoleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +37,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -45,6 +53,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +76,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/lecture/11_jpa/lecture-source/chap02-mapping",
+    "last_opened_file_path": "C:/lecture/11_jpa/lecture-source/chap02-mapping/src/test/java/com/ohgiraffers/section06/compositekey/section02/idclass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,6 +94,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\lecture\11_jpa\lecture-source\chap02-mapping\src\test\java\com\ohgiraffers\section06\compositekey\section02\idclass" />
+      <recent name="C:\lecture\11_jpa\lecture-source\chap02-mapping\src\test\java\com\ohgiraffers\section05\access\subsection02\getter" />
       <recent name="C:\lecture\11_jpa\lecture-source\chap02-mapping\src\test\java" />
       <recent name="C:\lecture\11_jpa\lecture-source\chap02-mapping\src\main\resources" />
     </key>
@@ -92,15 +103,15 @@
       <recent name="C:\lecture\11_jpa\lecture-source\chap02-mapping\src\test\resources\META-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ohgiraffers.section05.access.subsection01.field" />
       <recent name="com.ohgiraffers.section04.enumtype" />
       <recent name="com.ohgiraffers.section03.primarykey.subsection02.table" />
       <recent name="com.ohgiraffers.section03.primarykey.subsection01.sequence" />
       <recent name="com.ohgiraffers.section03.primary.subsection01.sequence" />
-      <recent name="com.ohgiraffers.section02.column" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.EntityTypeMappingTests.enum_타입_매핑_테스트">
-    <configuration name="ColumnMappingTests.컬럼_속성_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.IdClassTests.아이디_클래스_사용한_복합키_테이블_매핑_테스트">
+    <configuration name="EmbeddedKeyTests.임베디드_아이디_사용한_복합키_테이블_매핑_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -113,7 +124,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.ohgiraffers.section02.column.ColumnMappingTests.컬럼_속성_테스트&quot;" />
+            <option value="&quot;com.ohgiraffers.section06.compositekey.subsection01.embedded.EmbeddedKeyTests.임베디드_아이디_사용한_복합키_테이블_매핑_테스트&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -148,7 +159,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PrimaryKeyMappingTests.식별자_매핑_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FieldAccessTests.필드_접근_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -161,7 +172,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.ohgiraffers.section03.primarykey.subsection01.sequence.PrimaryKeyMappingTests.식별자_매핑_테스트&quot;" />
+            <option value="&quot;com.ohgiraffers.section05.access.subsection01.field.FieldAccessTests.필드_접근_테스트&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -172,7 +183,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SequenceTableMappingTests.식별자_매핑_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GetterAccessTests.프로퍼티_접근_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -185,7 +196,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.ohgiraffers.section03.primarykey.subsection02.table.SequenceTableMappingTests.식별자_매핑_테스트&quot;" />
+            <option value="&quot;com.ohgiraffers.section05.access.subsection02.getter.GetterAccessTests.프로퍼티_접근_테스트&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="IdClassTests.아이디_클래스_사용한_복합키_테이블_매핑_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.ohgiraffers.section06.compositekey.subsection02.idclass.IdClassTests.아이디_클래스_사용한_복합키_테이블_매핑_테스트&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -198,10 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IdClassTests.아이디_클래스_사용한_복합키_테이블_매핑_테스트" />
+        <item itemvalue="Gradle.EmbeddedKeyTests.임베디드_아이디_사용한_복합키_테이블_매핑_테스트" />
+        <item itemvalue="Gradle.GetterAccessTests.프로퍼티_접근_테스트" />
+        <item itemvalue="Gradle.FieldAccessTests.필드_접근_테스트" />
         <item itemvalue="Gradle.EntityTypeMappingTests.enum_타입_매핑_테스트" />
-        <item itemvalue="Gradle.SequenceTableMappingTests.식별자_매핑_테스트" />
-        <item itemvalue="Gradle.PrimaryKeyMappingTests.식별자_매핑_테스트" />
-        <item itemvalue="Gradle.ColumnMappingTests.컬럼_속성_테스트" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +250,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698048646614</updated>
       <workItem from="1698048647623" duration="1088000" />
-      <workItem from="1698105664168" duration="6440000" />
+      <workItem from="1698105664168" duration="12798000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;10/23 himedia 11.JPA - 02.mapping">
       <option name="closed" value="true" />
@@ -224,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698049537681</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&#10;10/24 himedia 11.JPA - 02.mapping">
+      <option name="closed" value="true" />
+      <created>1698112252193</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698112252193</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +276,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&#10;10/23 himedia 11.JPA - 02.mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;10/23 himedia 11.JPA - 02.mapping" />
+    <MESSAGE value="&#10;10/24 himedia 11.JPA - 02.mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;10/24 himedia 11.JPA - 02.mapping" />
   </component>
 </project>

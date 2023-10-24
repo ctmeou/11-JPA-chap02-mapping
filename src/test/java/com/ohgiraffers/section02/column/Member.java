@@ -3,33 +3,33 @@ package com.ohgiraffers.section02.column;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name="member_section02") //section01과 중복되지 않게 이름 변경
-@Table(name="tbl_member_section02")
+@Entity(name = "member_section02") //section01과 중복되지 않게 이름 변경
+@Table(name = "tbl_member_section02")
 public class Member {
     @Id
-    @Column(name="member_no")
+    @Column(name = "member_no")
     private int memberNo;
-    @Column(name="member_id", length = 20)
+    @Column(name = "member_id", length = 20)
     private String memberId;
-    @Column(name="member_pwd")
+    @Column(name = "member_pwd")
     private String memberPwd;
-    @Column(name="nickname")
+    @Column(name = "nickname")
     @Transient //@Transient : 테이블 생성 시 nickname은 다루지 않겠다. 생성 x = 무시
     private String nickname;
-    @Column(name="phone", columnDefinition = "varchar2(200) default '010-0000-0000'") //columnDefinition : 데이터 타입과 default 값 작성할 수 있음
+    @Column(name = "phone", columnDefinition = "varchar2(200) default '010-0000-0000'") //columnDefinition : 데이터 타입과 default 값 작성할 수 있음
     private String phone;
-    @Column(name="email", unique = true) //이메일 고유값
+    @Column(name = "email", unique = true) //이메일 고유값
     private String email;
-    @Column(name="address", nullable = false) //주소는 필수값
+    @Column(name = "address", nullable = false) //주소는 필수값
     private String address;
-    @Column(name="enroll_date")
+    @Column(name = "enroll_date")
     @Temporal(TemporalType.TIMESTAMP)      // DATE + TIME : 날짜 및 시간
     // @Temporal(TemporalType.DATE)        // 오라클에서는 TIMESTAMP와 동일
     // @Temporal(TemporalType.TIME)        // 1970/01/01에 시간만 맞게 나옴
     private Date enrollDate;
-    @Column(name="member_role")
+    @Column(name = "member_role")
     private String memberRole;
-    @Column(name="status")
+    @Column(name = "status")
     private String status;
 
     public Member() {}

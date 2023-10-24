@@ -12,9 +12,9 @@ import java.util.Objects;
 //@Embeddable 작성 후 Member 클래스에 @EmbeddedId 작성하는 방법
 @Embeddable //복합 키 매핑 시 어노테이션 작성 1
 public class MemberPK implements Serializable {
-    @Column(name="member_no")
+    @Column(name = "member_no")
     private int memberNo;
-    @Column(name="member_id")
+    @Column(name = "member_id")
     private String memberId;
 
     public MemberPK() {

@@ -2,19 +2,19 @@ package com.ohgiraffers.section05.access.subsection02.getter;
 
 import javax.persistence.*;
 
-@Entity(name="member_section05_subsection02")
-@Table(name="tbl_member_section05_subsection02")
+@Entity(name = "member_section05_subsection02")
+@Table(name = "tbl_member_section05_subsection02")
 // @Access(AccessType.PROPERTY)   // 클래스 레벨 : 모든 필드에 대해 getter 접근 방식 사용
 // 주의할 점 : @Id 어노테이션이 필드에 있으면 엔티티 생성이 안되므로 getter 메소드 위로 옮겨야 함
 public class Member {
     @Id //모든 방식을 getter로 사용하겠다고 하면 @ID getter메소드 위쪽으로 이동해야 함
-    @Column(name="member_no")
+    @Column(name = "member_no")
     private int memberNo;
-    @Column(name="member_id")
+    @Column(name = "member_id")
     private String memberId;
-    @Column(name="member_pwd")
+    @Column(name = "member_pwd")
     private String memberPwd;
-    @Column(name="nickname")
+    @Column(name = "nickname")
     private String nickname;
 
     public Member() {}

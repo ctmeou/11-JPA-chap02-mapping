@@ -3,32 +3,32 @@ package com.ohgiraffers.section04.enumtype;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name="member_section4")
-@Table(name="tbl_member_section04")
+@Entity(name = "member_section4")
+@Table(name = "tbl_member_section04")
 public class Member {
     @Id
-    @Column(name="member_no")
+    @Column(name = "member_no")
     private int memberNo;
-    @Column(name="member_id")
+    @Column(name = "member_id")
     private String memberId;
-    @Column(name="member_pwd")
+    @Column(name = "member_pwd")
     private String memberPwd;
-    @Column(name="nickname")
+    @Column(name = "nickname")
     private String nickname;
-    @Column(name="phone")
+    @Column(name = "phone")
     private String phone;
-    @Column(name="email")
+    @Column(name = "email")
     private String email;
-    @Column(name="address")
+    @Column(name = "address")
     private String address;
-    @Column(name="enroll_date")
+    @Column(name = "enroll_date")
     private Date enrollDate;
     //string -> RoleType 타입 변경
-    @Column(name="member_role")
+    @Column(name = "member_role")
     // @Enumerated(EnumType.ORDINAL)   // enum을 상숫값 사용한다는 의미 : 기본값(생략해도 동일)
     @Enumerated(EnumType.STRING)    // enum을 문자 값 사용한다는 의미
     private RoleType memberRole;
-    @Column(name="status")
+    @Column(name = "status")
     private String status;
 
     public Member() {}

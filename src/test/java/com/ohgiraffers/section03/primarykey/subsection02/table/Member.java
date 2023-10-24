@@ -3,8 +3,8 @@ package com.ohgiraffers.section03.primarykey.subsection02.table;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name="member_section03_subsection02")
-@Table(name="tbl_member_section03_subsection02")
+@Entity(name = "member_section03_subsection02")
+@Table(name = "tbl_member_section03_subsection02")
 @TableGenerator(
         name = "member_seq_table_generator", //Generator 지칭하는 이름
         table = "tbl_my_sequences",          //테이블 명칭
@@ -12,26 +12,26 @@ import java.util.Date;
 )
 public class Member {
     @Id
-    @Column(name="member_no")
+    @Column(name = "member_no")
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "member_seq_table_generator")
     private int memberNo;
-    @Column(name="member_id")
+    @Column(name = "member_id")
     private String memberId;
-    @Column(name="member_pwd")
+    @Column(name = "member_pwd")
     private String memberPwd;
-    @Column(name="nickname")
+    @Column(name = "nickname")
     private String nickname;
-    @Column(name="phone")
+    @Column(name = "phone")
     private String phone;
-    @Column(name="email")
+    @Column(name = "email")
     private String email;
-    @Column(name="address")
+    @Column(name = "address")
     private String address;
-    @Column(name="enroll_date")
+    @Column(name = "enroll_date")
     private Date enrollDate;
-    @Column(name="member_role")
+    @Column(name = "member_role")
     private String memberRole;
-    @Column(name="status")
+    @Column(name = "status")
     private String status;
 
     public Member() {}
